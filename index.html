@@ -8,21 +8,22 @@
 <body>
 
     <script>
-        function main(){
-            var head = document.getElementsById('fs');
+        function main() {
+            var head = document.getElementById('fs');
             var input = document.getElementById('inp');
             var output = document.getElementById('output');
 
-            input.value="pa55w0rd";
+            input.value = "pa55w0rd";
         }
 
         document.addEventListener("DOMContentLoaded", (event) => {
-            document.addEventListener("change", main);
-        })
+            var inputElement = document.getElementById("inp");
+            inputElement.addEventListener("change", main);
+        });
     </script>
     <h1 id="fs">Fsociety</h1>
     <hr>
-    <input onsubmit="main()" type="text" id="inp" placeholder="fsociety">
+    <input type="text" id="inp" placeholder="fsociety">
     <p id="output"></p>
 </body>
 </html>
