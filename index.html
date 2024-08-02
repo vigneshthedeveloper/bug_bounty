@@ -1,9 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>fsociety</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fsociety</title>
 </head>
 <body>
-<h1>Fsociety</h1>
+
+    <script>
+        function main(){
+            var head = document.getElementsById('fs');
+            var input = document.getElementById('inp');
+            var output = document.getElementById('output');
+
+            input.value="pa55w0rd";
+        }
+
+        document.addEventListener("DOMContentLoaded", (event) => {
+            document.addEventListener("change", main);
+        })
+    </script>
+    <h1 id="fs">Fsociety</h1>
+    <hr>
+    <input onsubmit="main()" type="text" id="inp" placeholder="fsociety">
+    <p id="output"></p>
 </body>
 </html>
